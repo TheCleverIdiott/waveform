@@ -12,9 +12,12 @@ const App = () => {
     setWaveformData(data.data);
   }, []);
 
-
-  return <WaveformChart waveformData={waveformData.result} />;
-
+  return (
+    <div>
+      <h1>Example Waveform</h1>
+      <Waveform data={waveformData} />
+    </div>
+  );
 };
 
 export default App;
